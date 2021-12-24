@@ -52,6 +52,6 @@ body{
     background-color: rgb(32, 32, 32);
     border: none;
 }
-.ButtonsDiv input:hover{
+.ButtonsDiv input:active{
     background-color: rgb(236, 54, 54);
 }

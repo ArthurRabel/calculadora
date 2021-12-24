@@ -7,7 +7,7 @@ function transformValor(){
     return valorArray;
 }
 function ultimaArray() {
-    valorLest = valorArray.length - 1;
+    valorLest = valorArray[valorArray.length - 1];
     return valorLest;
 }
 function multiplicacao() {
@@ -75,19 +75,33 @@ function ButtonsEfeccet(element){
     if(valor == 'C'){
         reset();
         return;
-    }else if(valor == '='){
-        calcular();
+    }if(valor == '='){
+        if(valorLest != '+' && valorLest != '-' && valorLest != 'x' && valorLest != '/' && valorLest != undefined){
+            calcular();
+        }
         return;
-    }else if(valor == '+' || valor == '-' || valor == 'x' || valor == '/'){
-        ultimaArray()
-        visor.innerHTML += ` ${valor} `;
-        transformValor();
-        return;
+    }if(valor == '+' || valor == '-' || valor == 'x' || valor == '/'){
+        if(valorArray != undefined){
+            ultimaArray()
+            if(valorLest != '+' && valorLest != '-' && valorLest != 'x' && valorLest != '/' && valorLest != undefined){
+                visor.innerHTML += ` ${valor}`;
+                transformValor();   
+                ultimaArray()
+            }
+            return
+        }
     }else{
-        visor.innerHTML += `${valor}`;
-        transformValor();
+        if(valorLest == '+' || valorLest == '-' || valorLest == 'x' || valorLest == '/'){
+            visor.innerHTML += ` ${valor}`;
+            transformValor();
+            ultimaArray()
+            return;
+        }else{
+            visor.innerHTML += `${valor}`;
+            transformValor();
+            return;
+        }
     }
-    return valor;
 };
 
 document.querySelectorAll(".buttonCalc").forEach(elemento => {elemento.addEventListener('click', ButtonsEfeccet, true)});
