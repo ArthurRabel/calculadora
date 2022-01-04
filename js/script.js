@@ -1,5 +1,5 @@
-let visor = document.querySelector("#numeroAtual");
-let visorSuperior = document.querySelector("#numeroAnterior");
+let visor = document.querySelector("#typed");
+let visorSuperior = document.querySelector("#historic");
 let valor, valorArray, valorLest, multResult, divResult, somResult, subResult, number, numberLast, numberLater;
 
 function transformValor(){
@@ -104,4 +104,4 @@ function ButtonsEfeccet(element){
     }
 };
 
-document.querySelectorAll(".buttonCalc").forEach(elemento => {elemento.addEventListener('click', ButtonsEfeccet, true)});
+document.querySelectorAll(".c-calc__Button").forEach(elemento => {elemento.addEventListener('click', ButtonsEfeccet, true)});
