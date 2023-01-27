@@ -1,11 +1,22 @@
-# calculadora
+# Calculadora Basica
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/ArthurUndefined/calculadora/blob/main/licence) 
 
----
- Para Acesse o link a baixo para ver o site
- 
-https://arthurundefined.github.io/calculadora/
+# Sobre o projeto
 
----
- 
- <img src = "https://raw.githubusercontent.com/TanZng/TanZng/master/assets/hollor_knight3.gif" width = "200" />
- 
+<code>https://arthurundefined.github.io/calculadora/</code>
+
+ O projeto de calculadora basico, para treinar javascript e logica de programação basica.
+
+## Layout
+![calculadora imagem](https://github.com/ArthurUndefined/calculadora/blob/main/img/calculadora.PNG)
+
+# Tecnologias utilizadas
+- HTML
+- CSS
+- JS
+
+## Implantação em produção
+- Front end web: Github Pages
+
+# Authors
+© Arthur Rabelo
