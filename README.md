@@ -5,7 +5,7 @@
 
 <code>https://arthurundefined.github.io/calculadora/</code>
 
- O projeto de calculadora basico, para treinar javascript e logica de programação basica.
+ O projeto de calculadora básica, para treinar javascript e logica de programação básica.
 
 ## Layout
 ![calculadora imagem](https://github.com/ArthurUndefined/calculadora/blob/main/img/calculadora.PNG)
